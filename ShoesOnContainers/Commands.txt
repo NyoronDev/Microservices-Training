@@ -1,0 +1,13 @@
+Docker commands
+Make SQL Database - docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=ProductApi(!)' -e 'MSSQL_PID=Express' -p 1445:1433 --name=catalogdb microsoft/mssql-server-linux:latest
+For SQL Server Management Studio - User: sa, server: localhost,1445
+Command enter to database - docker exec -it catalogdb /opt/mssql-tools/bin/sqlcmd -S localhost -U sa
+Check docker list of active containers - docker ps
+Check docker list of active / inactive containers - docker ps -a
+Start docker container - docker start catalogdb
+Portainer - docker run -d -p 9000:9000 -v //var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
+
+
+Entity Framework
+Create first migration - dotnet ef migrations add InitialMigration -o Data/Migrations -c ProductCatalogApi.Data.CatalogContext
+Update database with migration - dotnet ef database update InitialMigration -c ProductCatalogApi.Data.CatalogContext

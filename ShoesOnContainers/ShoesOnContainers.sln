@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{47DD6E6A-C963-49E6-8CC7-5B750F57430F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{1673A576-4149-45DD-8178-99F7B6F033E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{BA01408E-406A-484D-ACA0-00D7B7794E92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCatalogApi", "src\Services\ProductCatalogApi\ProductCatalogApi.csproj", "{77B63A91-AEBA-4A5B-A27C-80B546AE8AFC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "guides", "guides", "{04F4735C-8D6F-4DB5-9F5E-9423B9320483}"
+	ProjectSection(SolutionItems) = preProject
+		Commands.txt = Commands.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77B63A91-AEBA-4A5B-A27C-80B546AE8AFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77B63A91-AEBA-4A5B-A27C-80B546AE8AFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77B63A91-AEBA-4A5B-A27C-80B546AE8AFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77B63A91-AEBA-4A5B-A27C-80B546AE8AFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1673A576-4149-45DD-8178-99F7B6F033E5} = {47DD6E6A-C963-49E6-8CC7-5B750F57430F}
+		{BA01408E-406A-484D-ACA0-00D7B7794E92} = {47DD6E6A-C963-49E6-8CC7-5B750F57430F}
+		{77B63A91-AEBA-4A5B-A27C-80B546AE8AFC} = {1673A576-4149-45DD-8178-99F7B6F033E5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD716143-F772-4720-B492-A16FAE2D66D1}
+	EndGlobalSection
+EndGlobal
